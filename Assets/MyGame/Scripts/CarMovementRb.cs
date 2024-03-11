@@ -21,8 +21,15 @@ public class CarMovementRb : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        //Debug.Log("velocityrb" + rb.velocity);
+        //Debug.Log("postion" + rb.position);
+
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
+        /*
+        Vector3 velocity = rb.velocity;
+        velocity.z = v * speedPosition;
+        rb.velocity = velocity;*/
         rb.MovePosition(rb.position + new Vector3(0, 0, v*Time.deltaTime*speedPosition));
         rb.MoveRotation(rb.rotation * Quaternion.Euler(new Vector3(0, h*Time.deltaTime*speedRotation, 0)));
     }
