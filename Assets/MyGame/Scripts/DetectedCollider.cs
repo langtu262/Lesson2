@@ -15,28 +15,27 @@ public class DetectedCollider : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-    }
-    private void OnCollisionStay(Collision collision)
-    {
-        
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        
-    }
+ 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("11111");
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("2222");
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("3333");
+        }
     }
+
 }
