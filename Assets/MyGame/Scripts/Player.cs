@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Damage")
         {
             damaged = +5;
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
             Debug.Log(damaged);
         }
     }
