@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour
     private float damaged;
     public float fuel;
     private float capacity = 100f;
+    public float laps;
     void Start()
     {
         fuel = capacity;
@@ -46,6 +48,18 @@ public class Player : MonoBehaviour
             }
             Debug.Log(fuel);
         }
+        if (damaged>=100)
+        {
+            SceneManager.LoadScene("Lesson6");
+            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        
+    }
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.name == "Finish")
+            laps++;
     }
 
 
