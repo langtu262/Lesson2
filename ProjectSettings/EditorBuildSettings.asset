@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MyGame/Scenes/Lesson6.unity
-    guid: 04c6c83b14456c14a83970003c0be59c
+    path: Assets/MyGame/Scenes/lesson7/Home Scene.unity
+    guid: 6060c0c23daa11e4db1b83ff83ed81d5
   - enabled: 1
     path: Assets/MyGame/Scenes/lesson7/Gala Scene.unity
     guid: 8cf1c19bd31ae5441815d58daab5490b
-  - enabled: 1
-    path: Assets/MyGame/Scenes/lesson7/Home Scene.unity
-    guid: 6060c0c23daa11e4db1b83ff83ed81d5
   - enabled: 1
     path: Assets/MyGame/Scenes/lesson7/Store Scene.unity
     guid: 391de5c3b35c96e428640e557802b3bc
